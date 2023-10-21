@@ -1,0 +1,139 @@
+span {
+  font-size: 32px;
+  font-weight: bold;
+}
+p {
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main {
+  /* position: relative; */
+  width: 100%;
+  margin-top: 40px;
+}
+.pokemonCardWrap {
+  /* position: absolute;
+  width: 450px;
+  height: 550px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  background-color: #fff;
+  /* border: 1px solid black; */
+  text-align: center;
+  padding-bottom: 50px;
+}
+.pokemonCardData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10px;
+}
+.formTitle {
+  padding-top: 20px;
+  font-size: 32px;
+}
+.searchInput {
+  width: 250px;
+  height: 40px;
+  font-size: 28px;
+  padding: 10px;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+.searchBtn {
+  height: 60px;
+  font-size: 28px;
+  /* padding: 20px 10px; */
+  color: #212529;
+  background-color: rgba(255, 204, 25, 1);
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+}
+.searchBtn:hover {
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
+  transition: 0.5s;
+  animation: animate 20s linear infinite;
+  background-size: 300%;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+.pokemonName {
+  font-size: 38px;
+  padding: 20px 0;
+  margin: 0;
+}
+.pokemonImage {
+  width: 250px;
+  height: 250px;
+}
+.pokemonPrice {
+  font-size: 32px;
+  padding: 30px 0;
+}
+.mainImage {
+  background-image: url(./all-p.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 720px;
+  width: 100%;
+}
+.types {
+  font-size: 32px;
+}
+@media screen and (max-width: 450px) {
+  .searchForm {
+    flex-direction: column;
+  }
+}

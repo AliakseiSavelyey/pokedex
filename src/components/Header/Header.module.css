@@ -1,0 +1,48 @@
+.wrap {
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* margin-left: -50%; */
+  /* max-width: 1440px; */
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #98fb98;
+}
+.logo {
+  background-image: url(./pokeLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 130px;
+  width: 300px;
+}
+.cart {
+  width: 100px;
+  height: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .logo {
+    min-width: 150px;
+    max-width: 200px;
+  }
+  .cart {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .logo {
+    height: 80px;
+    width: 150px;
+  }
+  .cart {
+    width: 50px;
+  }
+}

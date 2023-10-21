@@ -1,0 +1,137 @@
+span {
+  font-size: 32px;
+  font-weight: bold;
+}
+p {
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 32px;
+}
+.detailsImg {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.pokemonWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 50px 0;
+  margin: 0;
+}
+.pokemonItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.bodyParams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nameCostParams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 21px;
+}
+.backBtn {
+  position: absolute;
+  bottom: 10px;
+  width: 80px;
+  height: 180px;
+  border: 1px solid black;
+  background-color: bisque;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  color: limegreen;
+  background-color: bisque;
+  padding: 30px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 38px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .btn {
+    padding: 10px;
+  }
+  .backBtn {
+    bottom: 40px;
+    width: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .btn {
+    padding: 10px;
+    font-size: 22px;
+  }
+  .backBtn {
+    bottom: 60px;
+    width: 40px;
+    height: 40px;
+  }
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 18px;
+   
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .detailsImg {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .backBtn {
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  span {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 10px;
+   
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .detailsImg {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .pokemonItem {
+  
+    gap: 10px;
+  }
+}

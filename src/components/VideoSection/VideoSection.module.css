@@ -1,0 +1,29 @@
+.videoSectionWrap {
+  border-top: 1px solid #000;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.videoWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.iframe {
+  border: 10px solid orange;
+}
+@media screen and (max-width: 1439px) {
+  .videoWrap {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .iframe {
+    width: 300px;
+  }
+}
