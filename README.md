@@ -1,1 +1,1 @@
-Pokemon
+Pokedex
