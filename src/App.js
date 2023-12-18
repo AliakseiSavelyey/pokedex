@@ -35,7 +35,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/Pokemons" element={<Pokemons />} />
         <Route path="/Types" element={<Types />} />
         <Route path="/Items" element={<Items />} />

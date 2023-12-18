@@ -22,7 +22,7 @@ const Navigation = () => {
       >
         <ul className={s.navList}>
           <li className={s.navLink}>
-            <Link to="/">Home</Link>
+            <Link to="/Home">Home</Link>
           </li>
           <li className={s.navLink}>
             <Link to="/Pokemons">Pokemons</Link>

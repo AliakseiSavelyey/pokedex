@@ -6,7 +6,7 @@ import s from './Header.module.css';
 const Header = () => {
   return (
     <div className={s.wrap}>
-      <Link to={'/'} className={s.logo} alt="logo"></Link>
+      <Link to={'/Home'} className={s.logo} alt="logo"></Link>
       <Navigation />
 
       <Link to={'/cart'}>
