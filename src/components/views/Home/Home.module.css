@@ -136,4 +136,7 @@ p {
   .searchForm {
     flex-direction: column;
   }
+  .searchInput::placeholder {
+    font-size: 0px;
+  }
 }

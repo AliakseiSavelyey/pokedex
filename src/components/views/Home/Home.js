@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 const Home = () => {
   const [findPokemon, setFindPokemon] = useState([]);
+  console.log(findPokemon);
   // const [findPokemon, setFindPokemon] = useLocalStorage('findPokemon', []);
   const [canRender, setCanRender] = useState( false);
   // const [canRender, setCanRender] = useLocalStorage('canRender', false);
@@ -61,7 +62,7 @@ const Home = () => {
                   Тип:
                   <br />
                   <span>
-                    {findPokemon.types.map((e) => e.type.name).join(', ')}
+                    {findPokemon.types?.map((e) => e.type.name).join(', ')}
                   </span>
                 </p>
                 <p>
@@ -75,11 +76,11 @@ const Home = () => {
               </div>
               <div>
                 <h1 className={s.pokemonName}>
-                  {findPokemon.name.toUpperCase()}
+                  {findPokemon.name?.toUpperCase()}
                 </h1>
                 <img
                   src={
-                    findPokemon?.sprites.other['official-artwork'].front_default
+                    findPokemon.sprites?.other['official-artwork'].front_default
                   }
                   alt={findPokemon.name}
                   className={s.pokemonImage}
