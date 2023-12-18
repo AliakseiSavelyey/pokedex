@@ -47,7 +47,7 @@ function App() {
           path="/Cart"
           element={<Cart orders={orders} deleteOrder={deleteOrder} />}
         />
-        <Route path="*" element={<NotFoundView />} />
+        <Route path="*" element={<Home />} />
       </Routes>
 
       <Footer />
